@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" id="homePage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Smart Login</title>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="form-container text-center mx-auto mt-5 w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input oninput="regexName()" type="text" name="" id="signUpNameInput" placeholder="Enter your name" class="d-block w-100 form-control my-3 ">
+        <p class="alert alert-danger d-none" id="invalidName">Invaild name</p>
+        <input oninput="regexEmail()" type="email" name="" id="signupEmailInput" placeholder="Enter your email" class="d-block w-100 form-control my-3">
+        <p class="alert alert-danger d-none" id="invalidEmail">Invaild Email Format (www@www.com)</p>
+        <input oninput="regexPassword()" type="password" name="" id="signupPasswordInput" placeholder="Enter your password" class="d-block w-100 form-control my-3">
+        <p class="alert alert-danger d-none" id="invalidPassword">Invaild Password Must be from 6 to 8 ( char,number and _ )</p>
+        <p class="my-3 " id="signUpMessage"></p>
+        <button class="btn btn-outline-info w-100 my-3" id="signupButton" >Sign Up</button>
+        <p class="text-white">Have an account? <a href="index.html">Sign in</a></p>
+    </div>
+    </div>
+    
+
+    <script src="../JS/index.js"></script>
+</body>
+</html>
