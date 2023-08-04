@@ -133,7 +133,7 @@ function login(){
         loginMessage.innerHTML='incorrect email or password'
     }
     else{
-        loginButton.href ='home.html'
+        loginButton.href ='./html/home.html'
     }
 }
 function UserExsist(){
